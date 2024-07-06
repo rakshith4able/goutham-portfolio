@@ -9,9 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "small-image": "url('/assets/img/bg_xs.jpg')",
+        "medium-image": "url('/assets/img/bg_md.jpg')",
+        "large-image": "url('/assets/img/bg_lg.jpg')",
       },
       fontFamily: {
         sans: ["Roboto", "sans-serif"],

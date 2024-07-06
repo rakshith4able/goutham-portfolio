@@ -7,11 +7,11 @@ import { HomeHandlers } from "./utils/handlers";
 
 export default function Home() {
   const [text] = useTypewriter({
-    words: ["Goutham Ananda"],
+    words: ["Goutham Ananda", "an Aerospace Stress Engineer"],
     typeSpeed: 100,
   });
   return (
-    <div className="flex flex-col items-center justify-center h-screen  bg-white text-black">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-small-image lg:bg-large-image md:bg-medium-image bg-cover bg-center text-white">
       <Head>
         <title>Goutham Ananda | Portfolio</title>
         <meta
@@ -21,42 +21,50 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="container mx-auto px-10 md:px-40 py-10 md:py-20 h-full">
-        <div className="h-full grid grid-rows-1 grid-cols-2 justify-center items-center">
-          <div className="h-full flex flex-col py-5 justify-evenly">
-            <h1 className="text-3xl text-start self-start w-full">G-A</h1>
-            <h2 className="text-6xl font-semibold">Hello!</h2>
-            <p className="text-5xl font-normal">
+      <main className="relative container md:px-40 md:py-32 h-full">
+        <div className="absolute inset-0 bg-black opacity-60"></div>
+        <h1 className="relative text-3xl text-start self-start w-full z-10">
+          G-A
+        </h1>
+        <div className="relative h-full grid grid-cols-1 md:grid-cols-1 lg:grid-cols-[60%_40%] justify-center items-center z-10">
+          <div className="h-full flex flex-col justify-evenly order-2 lg:order-1">
+            <h2 className="text-6xl font-semibold text-cyan-400">Hello!</h2>
+            <p className="text-3xl font-normal">
               I am <span className="font-semibold">{text}</span>
+              <Cursor />
             </p>
 
             <p className="text-xl">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-              iure harum iste unde aperiam cupiditate, fugiat ipsam, ab natus
-              impedit enim nostrum assumenda, omnis maxime voluptatum? Cumque
-              laboriosam quos perferendis.
+              Welcome to my page ! This is a work in progress and will be
+              updating shortly
             </p>
-            <p className="text-lg uppercase font-thin"> Connect On</p>
-            <div className=" text-3xl flex gap-5">
+            <p className="text-lg uppercase font-thin">Connect On</p>
+            <div className="text-3xl flex gap-5">
               <LinkedInIcon
-                className="cursor-pointer"
+                className="cursor-pointer text-white"
                 onClick={HomeHandlers.handleRedirect(
                   "website",
                   "https://www.linkedin.com/in/gouthamananda/"
                 )}
               />
-              <EmailIcon className="cursor-pointer"  onClick={HomeHandlers.handleRedirect(
+              <EmailIcon
+                className="cursor-pointer text-white"
+                onClick={HomeHandlers.handleRedirect(
                   "email",
                   "gouthamkaustuba@gmail.com"
-                )} />
+                )}
+              />
             </div>
           </div>
-          <div className="flex flex-col items-center">
-            <img
-              className="w-60 h-60 rounded-full"
-              src="/assets/img/profile_pic.jpeg"
-              alt="Rounded avatar"
-            />
+          <div className="flex flex-col items-center order-1 lg:order-2">
+            <div className="relative">
+              <div className="absolute inset-0 rounded-full bg-cyan-700 bg-opacity-25"></div>
+              <img
+                className="w-60 h-60 rounded-full border-4 border-cyan-400"
+                src="/assets/img/profile_pic.jpeg"
+                alt="Rounded avatar"
+              />
+            </div>
           </div>
         </div>
       </main>
