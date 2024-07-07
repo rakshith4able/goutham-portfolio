@@ -22,12 +22,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="lg:relative container h-full py-5 px-5 md:py-20 md:px-10">
-        <div className="absolute inset-0 bg-black opacity-60"></div>
+      <main className="lg:relative w-full h-full  h-90 lg:h-[100%] py-5 px-5 md:py-20 md:px-10 lg:py-40 lg:px-40">
+        <div className="absolute inset-0  bg-black opacity-60 w-full"></div>
         <h1 className="relative text-3xl md:text-5xl text-start self-start w-full z-10">
           G-A
         </h1>
-        <div className="relative h-full grid grid-cols-1 grid-rows-[40%_60%] md:grid-cols-1 lg:grid-cols-[60%_40%] justify-center items-center z-10">
+        <div className="relative h-full grid grid-cols-1 grid-rows-[40%_60%] md:grid-cols-1 lg:grid-cols-[75%_25%] justify-center items-center z-10">
           <div className="h-full flex flex-col gap-6 order-2 lg:order-1">
             <h2 className="text-4xl md:text-6xl font-semibold text-cyan-400">
               Hello!
@@ -65,7 +65,7 @@ export default function Home() {
             <div className="relative">
               <div className="absolute inset-0 rounded-full bg-cyan-700 bg-opacity-25"></div>
               <img
-                className="w-32 h-32 md:w-44 md:h-44 rounded-full border-4 border-cyan-400"
+                className="w-32 h-32 md:w-44 md:h-44 lg:w-44 lg:h-44 rounded-full border-4 border-cyan-400"
                 src="/assets/img/profile_pic.jpeg"
                 alt="Rounded avatar"
               />
