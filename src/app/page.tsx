@@ -1,5 +1,4 @@
 "use client";
-import Head from "next/head";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { BsLinkedin as LinkedInIcon } from "react-icons/bs";
 import { SiGmail as EmailIcon } from "react-icons/si";
@@ -12,50 +11,7 @@ export default function Home() {
     loop: true,
   });
   return (
-    <div className="flex flex-col items-center justify-center  bg-small-image lg:bg-large-image md:bg-medium-image bg-cover bg-center text-white h-screen overflow-hidden">
-      <Head>
-        <title>Goutham Ananda | Portfolio</title>
-        <meta
-          name="description"
-          content="An introduction page for an aerospace professional"
-        />
-
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="assets/icons/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="assets/icons/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="assets/icons/favicon-16x16.png"
-        />
-        <link rel="manifest" href="/site.webmanifest" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-        <meta name="msapplication-TileColor" content="#da532c" />
-        <meta name="theme-color" content="#ffffff" />
-        <link rel="icon" href="assets/icons/favicon.ico" />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="192x192"
-          href="assets/icons/android-chrome-192x192.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="512x512"
-          href="assets/icons/android-chrome-512x512.png"
-        />
-      </Head>
-
+    <div className="flex flex-col items-center justify-center  bg-small-image lg:bg-large-image md:bg-medium-image bg-cover bg-center text-white h-lvh overflow-hidden">
       <main className="lg:relative w-full h-full py-5 px-5 md:py-20 md:px-10 lg:py-40 lg:px-40">
         <div className="absolute inset-0  bg-black opacity-60 w-full"></div>
         <h1 className="relative text-3xl md:text-5xl text-start self-start w-full z-10">

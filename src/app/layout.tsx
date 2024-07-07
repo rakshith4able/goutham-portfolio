@@ -33,7 +33,27 @@ export const metadata: Metadata = {
     ],
     apple: { url: "assets/icons/apple-touch-icon.png", sizes: "180x180" },
   },
+  openGraph: {
+    type: "website",
+    url: "https://www.aerospacestress.com/",
+    title: "Goutham Ananda - Portfolio",
+    description: "Goutham Ananda's Portfolio Website",
+    images: [
+      {
+        url: "assets/img/preview.png",
+        alt: "Goutham Ananda's Portfolio Preview",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "https://www.aerospacestress.com/",
+    title: "Goutham Ananda - Portfolio",
+    description: "Goutham Ananda's Portfolio Website",
+    images: "assets/img/preview.png",
+  },
   manifest: "/site.webmanifest",
+  metadataBase: new URL("https://www.aerospacestress.com"),
 };
 
 export default function RootLayout({
