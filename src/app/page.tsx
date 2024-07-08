@@ -11,8 +11,8 @@ export default function Home() {
     loop: true,
   });
   return (
-    <div className="flex flex-col items-center justify-center  bg-small-image lg:bg-large-image md:bg-medium-image bg-cover bg-center text-white h-lvh overflow-hidden">
-      <main className="lg:relative w-full h-full py-5 px-5 md:py-20 md:px-10 lg:py-40 lg:px-40">
+    <div className="flex flex-col items-center justify-center  bg-small-image lg:bg-large-image md:bg-medium-image bg-cover bg-center text-white h-lvh max-h-screen overflow-hidden">
+      <main className="relative w-full h-full py-5 px-5 md:py-20 md:px-10 lg:py-40 lg:px-40">
         <div className="absolute inset-0  bg-black opacity-60 w-full"></div>
         <h1 className="relative text-3xl md:text-5xl text-start self-start w-full z-10">
           G-A
